@@ -1,2 +1,2 @@
 # cn-highcharts
-highcharts for china cdnjs
+Python Highcharts wrapper for china.
