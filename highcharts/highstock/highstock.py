@@ -61,10 +61,10 @@ class Highstock(object):
         
         # set Javascript src, Highcharts lib needs to make sure it's up to date
         self.JSsource = [
-                'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/js/highstock.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/js/highcharts-more.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/js/modules/exporting.js',
+                'https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/js/highstock.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/js/highcharts-more.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/modules/exporting.js',
                 'https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js',
             ]
 

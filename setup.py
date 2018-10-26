@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cn-highcharts',
-    version='0.0.0',
+    version='0.0.2',
     description=('Python Highcharts wrapper for china.'),
     install_requires=["Jinja2", "future"],
     # long_description=open('README.rst').read(),

@@ -65,12 +65,12 @@ class Highmap(object):
         
         # Set Javascript src
         self.JSsource = [
-                'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/highmaps.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/highcharts.js',  
-                'https://cdnjs.cloudflare.com/ajax/libs/6.0.7/modules/map.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/modules/data.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/js/modules/exporting.js',
+                'https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/highmaps.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/highcharts.js',  
+                'https://cdn.bootcss.com/6.0.7/modules/map.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/modules/data.js',
+                'https://cdn.bootcss.com/highcharts/6.0.7/modules/exporting.js',
                 'https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js'
             ]
 
@@ -209,7 +209,7 @@ class Highmap(object):
 
         if is_coordinate:
             self.data_is_coordinate = True
-            self.add_JSsource('https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js')
+            self.add_JSsource('https://cdn.bootcss.com/proj4js/2.3.6/proj4.js')
             if self.map and not self.data_temp:
                 series_data = Series([], series_type='map', **{'mapData': self.map})
                 series_data.__options__().update(SeriesOptions(series_type='map', **{'mapData': self.map}).__options__())
